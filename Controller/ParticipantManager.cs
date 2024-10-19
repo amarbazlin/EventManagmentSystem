@@ -69,6 +69,7 @@ namespace EventManagmentSystem.Controller
         // Method to fetch all participants from the database
         public static List<Participant> FetchParticipants()
         {
+            // Create a db object 
             DbConnection dbConnection = new DbConnection();
             string query = "SELECT PersonID, Username, Password, Name, PhoneNo, Role FROM person WHERE Role = 'Participant'";
 
